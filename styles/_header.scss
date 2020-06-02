@@ -1,0 +1,16 @@
+@use 'variables';
+
+.header-logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+
+  img {
+    margin-right: variables.$small;
+  }
+
+  h1 {
+    color: variables.$white;
+  }
+}

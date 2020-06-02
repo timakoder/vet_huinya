@@ -1,0 +1,29 @@
+@use 'variables';
+
+body {
+  margin: 0;
+  font-family: variables.$regular-family;
+}
+
+h1, p {
+  margin: 0
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: variables.$header-family;
+}
+
+.header-text {
+  font-family: variables.$header-family;
+}
+
+.regular-text {
+  font-family: variables.$regular-family;
+}
+
+.full-page-width-container {
+  width: variables.$page-width;
+  max-width: variables.$max-width;
+  margin: auto;
+}
