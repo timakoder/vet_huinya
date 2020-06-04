@@ -1,29 +1,52 @@
-@use 'variables';
+@use 'vars';
+@use 'size';
+@import './mixin';
 
 body {
   margin: 0;
-  font-family: variables.$regular-family;
+  font-family: vars.$regular-family;
 }
 
 h1, p {
   margin: 0
 }
 
+.invisible {
+  @include normalTransition(opacity);
+  opacity: 0;
+
+  &.visible {
+    opacity: 1;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: variables.$header-family;
+  font-family: vars.$header-family;
 }
 
 .header-text {
-  font-family: variables.$header-family;
+  font-family: vars.$header-family;
 }
 
 .regular-text {
-  font-family: variables.$regular-family;
+  font-family: vars.$regular-family;
 }
 
 .full-page-width-container {
-  width: variables.$page-width;
-  max-width: variables.$max-width;
+  width: calc(100% - 32px);
+  max-width: size.$page-width;
   margin: auto;
+}
+
+.container-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

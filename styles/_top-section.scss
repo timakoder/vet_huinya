@@ -1,0 +1,63 @@
+@use 'header';
+@use 'size';
+@use 'vars';
+
+.top-section-container {
+  position: relative;
+}
+
+.top-section {
+  width: 100%;  
+  position: relative;
+  background-image: linear-gradient(0deg, rgba(0, 100, 255, 0.2), rgba(0, 100, 255, 0.2)), url(../img/top-section-image.png);
+  background-size: cover;
+}
+
+.top-section-info-container {
+  padding: 8px 84px 48px;
+  max-width: 700px;
+
+  h1 {
+    font-size: size.$large-2;
+    color: vars.$white;
+    font-weight: 800;
+  }
+
+  p {
+    color: vars.$white;
+    font-size: size.$medium-2;
+  }
+
+  .top-section-subtitle {
+    margin-top: size.$medium;
+  }
+}
+
+.appointment-button-container {
+  margin-top: size.$large-2;
+}
+
+.appointment-button {
+  color: vars.$dark;
+  cursor: pointer;
+  font-size: size.$small-2;
+  border-radius: 15px;
+  opacity: .8;
+  background: vars.$light-blue-1;
+  border: none;
+  font-family: vars.$regular-family;
+  font-weight: 600;
+  padding: size.$small-2 size.$large-2;
+}
+
+.links-container {
+  position: absolute;
+  right: 0;
+  bottom: 24px;
+  display: flex;
+  flex-direction: column;
+
+  a {
+    opacity: .8;
+  }
+}
