@@ -61,3 +61,38 @@
     opacity: .8;
   }
 }
+
+@media (max-width: size.$tablet-width) {
+  .top-section-info-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: size.$mobile-width) {
+  .links-container {
+    display: none;
+  }
+
+  .top-section-subtitle {
+    display: none;
+  }
+
+  .top-section-title {
+    h1 {
+      font-size: size.$medium-2;
+      text-align: center;
+      line-height: 1.5;
+      letter-spacing: 1px;
+    }
+  }
+
+  .top-section-info-container {
+    padding-top: size.$large;
+    padding-bottom: 150px;
+    
+    .appointment-button-container {
+      text-align: center;
+    }
+  }
+}
