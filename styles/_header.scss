@@ -93,3 +93,61 @@ nav.site-nav {
     }
   }
 }
+
+@media (max-width: size.$mobile-small) {
+  .top-section-title {
+    h1 {
+      font-size: size.$medium-3;
+    }
+  }
+
+  .header-logo-container {
+    img {
+      width: 30px;
+    }
+
+    h1 {
+      font-size: size.$small-2;
+    }
+  }
+}
+
+.humburger-menu-icon {
+  display: flex;
+  flex-direction: column;
+  width: 20px;
+  height: 20px;
+  padding: 15px;
+  border: 2px solid vars.$white;
+  border-radius: 1000px;
+  align-items: flex-start;
+  justify-content: center;
+
+  .humburger-menu-icon-line {
+    height: 2px;
+    background: vars.$white;
+    margin-bottom: 4px;
+  }
+
+  .humburger-menu-icon-line:nth-child(1) {
+    width: 90%;
+  }
+
+  .humburger-menu-icon-line:nth-child(2) {
+    width: 80%;
+  }
+
+  .humburger-menu-icon-line:nth-child(3) {
+    width: 100%;
+  }
+
+  .humburger-menu-icon-line:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: size.$mobile-small) {
+  .humburger-menu-icon  {
+    padding: 10px;
+  }
+}
