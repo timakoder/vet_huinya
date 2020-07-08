@@ -1,0 +1,50 @@
+@use 'header';
+@use 'size';
+@use 'vars';
+
+
+.cards-header {
+    max-width: 1200px;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .grid-item {
+    margin: auto;
+  }
+  
+
+
+.cards {
+    max-width: 1000px;
+    display: grid;
+    margin: auto;
+    /*padding-left: 100px;
+    padding-right: 100px;*/
+    grid-template-columns: repeat(auto-fill, minmax(252px, 1fr));
+    grid-gap: 30px;
+    align-items: start;
+  }
+
+
+  article {
+    position: relative;
+    h1 {     
+        font-size: 250%;
+        color: vars.$dark-blue;
+        font-weight: 800;}
+  }
+  
+
+  .article-title {
+    color: white;
+    font-size: 140%;
+    position: absolute;
+    padding-left: 26px;
+    padding-bottom: 27px;
+    bottom: 0;
+    width: 100%;
+  }
