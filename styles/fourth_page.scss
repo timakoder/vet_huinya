@@ -1,0 +1,210 @@
+@use 'header';
+@use 'size';
+@use 'vars';
+
+
+.fourth-page{
+    width: 100%;
+    position: relative;
+    /*background-color: #FFFFFF;*/
+    background-image: url(../img/steps-second-page.svg);
+    background-repeat: no-repeat;
+    background-position: 10% 80%;
+  }
+  
+  .fourth-page-container {
+    position: relative;
+  
+    /*background-image: url(../img/krest.png);
+    background-repeat: no-repeat;
+    background-position: 98% 40%;*/
+  }
+  
+  .grid-fourth {
+    max-width: 1050px;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 16fr;
+    align-items: start;
+    gap: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    /*padding-bottom: 100px;*/
+  }
+
+  .coloumn-1{
+    position	: relative;
+    display: flex;
+    /*width: 12%;
+    height: 91%;
+    /*margin: auto;
+    /*width: 100%;
+    height: 100%;
+    object-fit: cover;*/
+   
+    h1{
+      color: black;
+      font-size: 2vw;
+    }
+    h2{
+      color: black;
+      position	: absolute;
+      font-family: 'Montserrat';
+      top		: 170px;
+     left		: 11px;
+     width		: 94%;
+     font-size: 1.2rem;
+     line-height: 1.6;
+     font-weight: 300;
+
+    border-radius: 15px;
+    opacity: 0.8;
+    background: #B2EBFF;
+    border: none;
+    padding: 24px 23px;
+  
+    
+    }
+  }
+
+  .coloumn-2{
+    position	: relative;
+    display: flex;
+   
+    /*margin: auto;
+    /*width: 100%;
+    height: 100%;
+    object-fit: cover;*/
+    
+   
+    h1{
+      color: black;
+      font-size: 2.5vw;
+    }
+
+    h2{
+      color: black;
+      position	: absolute;
+      font-family: 'Montserrat';
+      top		: 169px;
+     left		: 0px;
+     width		: 100%;
+     font-size: 1.2rem;
+     line-height: 1.6;
+     font-weight: 300;
+
+    border-radius: 15px;
+    opacity: 0.8;
+    background: #B2EBFF;
+    border: none;
+    border-radius: 0px 0px 20px 20px;
+    margin: -11px 0px;
+    padding: 30px 0px 30px 7px;
+  
+    
+    }
+  }
+  
+  .coloumn-3{
+    position	: relative;
+    display: flex;
+
+    /*margin: auto;
+    /*width: 100%;
+    height: 100%;
+    object-fit: cover;*/
+   
+    h1{
+      color: black;
+      font-size: 2.5vw;
+    }
+    h2{
+      color: black;
+      position	: absolute;
+      font-family: 'Montserrat';
+      top		: 169px;
+     left		: 0px;
+     width		: 100%;
+     font-size: 1.2rem;
+     line-height: 1.6;
+     font-weight: 300;
+
+    border-radius: 15px;
+    opacity: 0.8;
+    background: #B2EBFF;
+    border: none;
+    border-radius: 0px 0px 20px 20px;
+    margin: -11px 0px;
+    padding: 30px 0px 30px 7px;
+  
+    
+    }
+  }
+  .coloumn-4{
+    position	: relative;
+    display: flex;
+    /*margin: auto;
+    /*width: 100%;
+    height: 100%;
+    object-fit: cover;*/
+   
+    h1{
+      color: black;
+    }
+    h2{
+    color: black;
+    position	: absolute;
+    font-family: 'Montserrat';
+    top		: 169px;
+    left		: 0px;
+    width		: 100%;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-weight: 300;
+
+    border-radius: 15px;
+    opacity: 0.8;
+    background: #B2EBFF;
+    border: none;
+    border-radius: 0px 0px 20px 20px;
+    margin: -11px 0px;
+    padding: 30px 0px 30px 7px;
+    }
+  }
+  
+  
+  .coloumn-5{
+    /*margin: auto;
+    /*width: 100%;
+    height: 100%;
+    object-fit: cover;*/
+   
+    h1{
+      color: black;
+    }
+  }.coloumn-6{
+    /*margin: auto;
+    /*width: 100%;
+    height: 100%;
+    object-fit: cover;*/
+   
+    h1{
+      color: black;
+    }
+  }
+
+
+
+  .article-img{
+    /*width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding-bottom: 4vw;*/
+}
+
+.image-item{
+  margin-right: 10px;
+  /*width: 100%;*/
+  height: 100%;
+}

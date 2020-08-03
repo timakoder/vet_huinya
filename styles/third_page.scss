@@ -1,16 +1,87 @@
+@use 'header';
+@use 'size';
+@use 'vars';
+
+.third-page{
+  width: 100%;
+  position: relative;
+  background-color: #F2F2F2;
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.4);
+}
+
+.third-page-container {
+  position: relative;
+  background-image: url(../img/krest.png);
+  background-repeat: no-repeat;
+  background-position: 98% 40%;
+}
+
+
+
 .simptoms-container {
     margin-top: 30px;
   }
   
-  .asimptoms-button {
-    color: vars.$dark;
+
+  .simptoms-button {
     cursor: pointer;
-    font-size: size.$medium;
+    
+    padding: 0.8vw 1.8vw;
+    text-align: center;
+    width: 100%;
+    height: auto;
     border-radius: 15px;
     opacity: .8;
-    background: vars.$light-blue-1;
+    background:  #B2EBFF;
     border: none;
-    font-family: vars.$regular-family;
-    font-weight: 600;
-    padding: size.$medium size.$large-2;
+    
+    h1{
+      color: #2E282A;
+      font-family: 'Montserrat';
+      font-weight: 600;
+      font-size: 0.8vw;
+    }
   }
+
+  
+
+  .button-text-2{
+    margin: auto;
+  }
+  .button-text-3{
+    margin: auto;
+    padding-top: 5px;
+  }
+
+  .button-text-4{
+    margin: auto;
+    padding-top: 5px;
+  }
+
+  .vl {
+    margin: auto;
+    padding-left: 16px;
+    border-right: 1px solid black;
+    height: 38%;
+    padding-bottom: 23px;
+}
+
+.appointment-button-container-doctor {
+  margin-top: 30px;
+  /*padding-left: 40px;*/
+  float: right;
+
+}
+
+.appointment-button-doctor {
+  color: vars.$dark;
+  cursor: pointer;
+  font-size: size.$medium;
+  border-radius: 15px;
+  opacity: .8;
+  background: vars.$light-blue-1;
+  border: none;
+  font-family: vars.$regular-family;
+  font-weight: 600;
+  padding: size.$medium size.$large-2;
+}

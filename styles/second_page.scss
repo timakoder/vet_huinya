@@ -11,7 +11,7 @@
 
 .second-page {
   width: 100%;  
-  position: relative;
+  /*position: relative;*/
   background-color: #ffffff;
   background-image: url(../img/background_second_page.png);
   background-size: cover;
@@ -47,11 +47,11 @@
      max-width: 500px;
      opacity: .8;
      padding-left: 8px;
-     padding-top: 19px;
+     padding-top: 23px;
   a {
     font-family: vars.$regular-family;
     color: vars.$dark;
-    font-size: size.$small-3;
+    font-size: 0.8vw;
     border: 2px solid vars.$white;
     border-radius: 15px;
     background: vars.$light-blue-1;

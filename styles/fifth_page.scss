@@ -1,0 +1,19 @@
+@use 'header';
+@use 'size';
+@use 'vars';
+
+
+.fifth-page{
+    width: 100%;
+    position: relative;
+    padding-bottom: 150px;
+    /*background-color: #FFFFFF;*/
+  }
+  
+  .fifth-page-container {
+    position: relative;
+  
+    /*background-image: url(../img/krest.png);
+    background-repeat: no-repeat;
+    background-position: 98% 40%;*/
+  }
