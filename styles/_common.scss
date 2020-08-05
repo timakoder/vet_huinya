@@ -75,6 +75,44 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+
+.back{
+  position: fixed;
+  left: 20px;
+  bottom: 3px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.to-top {
+  background:rgb(78, 149, 255);
+  position: fixed;
+  bottom: 16px;
+  left:32px;
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:32px;
+  color:#ffffff;
+  text-decoration: none;
+  opacity:0;
+  pointer-events: none;
+  transition: all .4s;
+}
+
+.to-top.active {
+  bottom:32px;
+  pointer-events: auto;
+  opacity:1;
+}
+
+
+
+
 @media (max-width: size.$mobile-small) {
   .phone-number-button-container {
     a {

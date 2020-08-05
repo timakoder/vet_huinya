@@ -5,16 +5,18 @@
 
 .cards-header {
     max-width: 1050px;
-    display: grid;
+    display: flex;
+    flex-direction: row;
     margin: auto;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(252px, 1fr));
     grid-gap: 30px;
     padding-top: 50px;
     padding-bottom: 80px;
   }
-  .grid-item {
-    margin: 0;
+  .grid-item-third-page {
+    padding-left: 325px;
   }
+  
   
 
 
@@ -30,7 +32,7 @@
     padding-bottom: 50px;
   }
 
-  .article-header{
+  .article-header-third-page{
     margin: 0px;
   }
   
@@ -39,8 +41,8 @@
     position: relative;
     margin: auto;
     h1 {     
-      position: absolute;
-        font-size: 3vw;
+      /*position: absolute;*/
+        font-size: 3em;
         color: vars.$dark-blue;
         font-weight: 800;}
   }
@@ -58,7 +60,7 @@
 
   .article-title {
     color: white;
-    font-size: 133%;
+    font-size: 1.4em;
     position: absolute;
     padding-left: 22px;
     padding-bottom: 28px;
@@ -86,34 +88,25 @@
     position: relative;
     border-radius: 0.8vw;
     background: #B2EBFF;
-    padding: 1vw 1vw 3vw 1vw;
+    padding: 1vw 1vw 1vw 1vw;
     position: relative;
     opacity: 0.8;
     border-radius: 1vw;
-
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-  .questions1{
-    position: relative;
-    border-radius: 0.8vw;
-    background: #B2EBFF;
-    padding: 1vw 1vw 3vw 1vw;
-    position: relative;
-    opacity: 0.8;
-    border-radius: 1vw;
-    h1{
-      align-content: center;
-    }
-  }
 
 
   .grid-box1{
     h1{
-      position: absolute;
+      
       font-family: "Montserrat";
       font-weight: 600;
       color: black;
-      font-size: 0.8vw;
+      font-size: 0.8em;
     }
   }
 
@@ -130,9 +123,9 @@
     display: grid;
     margin: auto;
     padding-top: 89px;
-    grid-template-columns: 1fr  2fr;
+    grid-template-columns: repeat(auto-fill, minmax(402px, 1fr));
     align-items: start;
-    padding-bottom: 100px;
+    padding-bottom: 60px;
     /*padding-left: 50px;
     padding-right: 50px;*/
     
@@ -145,18 +138,18 @@
   margin: auto;
   color: #172A46;
   padding-bottom: 100px;
-    padding-left: 35px; 
+  padding-left: 10px; 
   h1{
-    font-size: 2.4vw;
+    font-size: 2.4em;
   }
   h2{
-    font-size: 1.4vw;
+    font-size: 1.4em;
     font-weight: 300;
     padding-left: 5px;
     
   }
   h3{
-      font-size: 1.4vw;
+      font-size: 1.4em;
       font-weight: 300;
       padding-left: 5px;
       border-left: 1px solid black;
@@ -167,8 +160,37 @@
   /*margin: auto;*/
   /*padding-right: 28px;
   object-fit: cover;*/
+  display: flex;
+  justify-content: center;
   width: 100%;
-    height: auto;
+  height: auto;
+  padding-bottom: 40px;
     
 }
 
+
+
+
+
+@media (max-width: 845px) {
+  .cards-header {
+    /* max-width: 1050px;*/
+     display: flex;
+     flex-direction: column;
+     margin: auto;
+     padding-top: 50px;
+     padding-bottom: 80px;
+   }
+  
+   article {
+    position: relative;
+    margin: auto;
+    h1 {     
+      /*position: absolute;*/
+        font-size: 4em;
+        color: vars.$dark-blue;
+        font-weight: 800;}
+  }
+
+
+  }

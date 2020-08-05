@@ -74,9 +74,11 @@
 }
 
 .appointment-button-doctor {
+  width: 100%;
+  height: auto;
   color: vars.$dark;
   cursor: pointer;
-  font-size: size.$medium;
+  font-size: 2em;
   border-radius: 15px;
   opacity: .8;
   background: vars.$light-blue-1;

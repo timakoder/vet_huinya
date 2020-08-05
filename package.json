@@ -28,10 +28,13 @@
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
+    "animate.css": "^4.1.0",
+    "aos": "^3.0.0-beta.6",
     "babel": "^6.23.0",
     "bootstrap": "^4.5.0",
     "jquery": "^3.5.1",
     "js": "^0.1.0",
-    "resolve-url": "^0.2.1"
+    "resolve-url": "^0.2.1",
+    "wowjs": "^1.1.3"
   }
 }

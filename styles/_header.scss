@@ -20,11 +20,13 @@
   }
 }
 
+
+
 nav.site-nav {
   a {
     @include quickTransition(color);
     margin-left: size.$small;
-    color: vars.$brown; 
+    color: #ffffff; 
     position: relative;
     font-size: size.$small-2;
   }

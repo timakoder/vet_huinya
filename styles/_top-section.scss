@@ -15,6 +15,8 @@
 
   width: 100%;
   height:auto;
+  min-height: 100vh;
+
   position: relative;
   background-image: linear-gradient(0deg, rgba(33, 118, 247, 0.2), rgba(0, 100, 255, 0.2)), url(../img/top-section-image-1.svg);
   background-size:cover;
@@ -30,14 +32,14 @@
   padding: 8px 84px 48px;
   max-width: 100%;
   h1 {
-    font-size: 6vw;
+    font-size: 6em;
     color: vars.$white;
     font-weight: 800;
   }
 
   p {
     color: vars.$white;
-    font-size: 3vw;
+    font-size: 3em;
   }
 
   .top-section-subtitle {
@@ -63,27 +65,47 @@
 }
 
 .links-container {
-  position: absolute;
+  position: fixed;
+  padding-right: 10px;
   right: 0;
-  bottom: 24px;
+  bottom: 3px;
   display: flex;
   flex-direction: column;
-
-  a {
-    opacity: .9;
-  }
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  opacity:0;
+  pointer-events: none;
+  transition: all .4s;
 }
+  /*a {
+    opacity: .9;
+  }*/
+
+  .links-container.active{
+    bottom:32px;
+    pointer-events: auto;
+     opacity:1;
+  }
+
+
 
 @media (max-width: size.$tablet-width) {
   .top-section-info-container {
     padding-left: 0;
     padding-right: 0;
+    h1 {
+      font-size: 5em;
+      color: vars.$white;
+      font-weight: 800;
+    }
   }
 }
 
 @media (max-width: size.$mobile-width) {
   .links-container {
     display: none;
+    
   }
 
   .top-section-subtitle {
