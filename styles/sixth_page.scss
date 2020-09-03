@@ -43,7 +43,7 @@
    
     h1{
       color: black;
-      font-size: 2vw;
+      font-size: 2em;
     }
     h2{
       color: black;
@@ -67,6 +67,7 @@
     display: flex;
     flex-direction: row;
     margin: auto;
+    justify-content: center;
     grid-template-columns: 1.5fr 1fr;
     /*grid-template-rows: 1fr 1fr;*/
     align-items: start;
@@ -116,4 +117,31 @@
   margin-right: 10px;
   width: 16%;
   height: auto;*/
+}
+
+@media (max-width: size.$mobile-small) {
+
+  .grid-six {
+    max-width: 1050px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+    grid-template-columns: 1.5fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+    align-items: start;
+    gap: 15px;
+    padding-bottom: 50px;
+}
+
+
+  .coloumn-six {
+    padding-left: 10px;
+  
+  h2 {
+  
+    font-size:0.8em;
+    
+  }
+}
 }

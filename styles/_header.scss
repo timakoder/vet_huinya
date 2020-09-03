@@ -11,16 +11,21 @@
   .icon { background-image: url(img/top-section-image);}
 
   img {
-    margin-right: size.$small
+    margin-right: size.$small;
+    height: auto;
+    width: 4vw;
+    
   }
 
   h1 {  
     color: vars.$white;
-    font-size: size.$medium-2;
+    font-size: 1.5rem;
   }
 }
 
-
+.article-header{
+  
+}
 
 nav.site-nav {
   a {

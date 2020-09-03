@@ -17,3 +17,15 @@
     background-repeat: no-repeat;
     background-position: 98% 40%;*/
   }
+
+  @media (max-width: size.$mobile-width) {
+    .slider__control_right1 {
+      right: 27.5vw;
+  }
+  }
+
+  @media (max-width: size.$mobile-small) {
+    .slider__control_right1 {
+      right: 23.5vw;
+  }
+  }

@@ -70,6 +70,7 @@
   margin-top: 30px;
   /*padding-left: 40px;*/
   float: right;
+  padding-bottom: 40px;
 
 }
 
@@ -78,12 +79,68 @@
   height: auto;
   color: vars.$dark;
   cursor: pointer;
-  font-size: 2em;
-  border-radius: 15px;
+  font-size: 1.5em;
+  border-radius: 1em;
   opacity: .8;
   background: vars.$light-blue-1;
   border: none;
   font-family: vars.$regular-family;
   font-weight: 600;
   padding: size.$medium size.$large-2;
+}
+
+.article-doctor{
+  height: auto;
+  width: 80%;
+}
+
+
+@media (max-width: size.$mobile-width) {
+
+.appointment-button-doctor {
+    width: 80%;
+    height: auto;
+    color: #2E282A;
+    cursor: pointer;
+    font-size: 1.5em;
+    border-radius: 1em;
+    opacity: 0.8;
+    background: #B2EBFF;
+    border: none;
+    font-family: Montserrat;
+    font-weight: 600;
+    padding: 24px 72px;
+}
+}
+
+@media (max-width: size.$mobile-small) {
+
+
+  .grid-doctor {
+    /* max-width: 1050px; */
+    display: grid;
+    margin: auto;
+    padding: 50px 0px 50px 0px;
+    grid-template-columns: repeat(auto-fill, minmax(261px, 1fr));
+    align-items: start;
+
+  }
+  .appointment-button-doctor {
+    width: 80%;
+    height: auto;
+    color: #2E282A;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 1em;
+    opacity: 0.8;
+    background: #B2EBFF;
+    border: none;
+    font-family: Montserrat;
+    font-weight: 600;
+    padding: 24px 72px;
+}
+
+.grid-box h1 {
+  font-size: 2em;
+}
 }

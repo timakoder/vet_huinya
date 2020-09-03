@@ -89,9 +89,9 @@ h1, h2, h3, h4, h5, h6 {
   background:rgb(78, 149, 255);
   position: fixed;
   bottom: 16px;
-  left:32px;
-  width:50px;
-  height:50px;
+  left:10px;
+  width:40px;
+  height:40px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .to-top.active {
-  bottom:32px;
+  bottom:10px;
   pointer-events: auto;
   opacity:1;
 }

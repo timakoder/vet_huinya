@@ -214,29 +214,8 @@
   .top-section-subtitle {
     display: none;
   }
-
-  .top-section-title {
-    h1 {
-      font-size: 4em;
-      text-align: center;
-      line-height: 1.2;
-      letter-spacing: 1px;
-      font-weight: 800;
-    }
-  }
-
-  .top-section-info-container {
-    padding-top: size.$large;
-    padding-bottom: 150px;
-    
-    .appointment-button-container {
-      text-align: center;
-    }
-  }
 }
-
-
-@media (max-width: 845px) {
+ 
 
   .phone-number-button-container-second-page{
     opacity: 0.8;
@@ -260,4 +239,4 @@
       }
     }
   }
-  }
+
