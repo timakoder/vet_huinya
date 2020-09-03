@@ -233,8 +233,26 @@
     grid-template-rows: 1fr 1fr 1fr;
     align-items: start;
     gap: 15px;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding: 0px 0px 0px 0px;
 
   }
+}
+
+@media (max-width: 425px) {
+  
+  .grid-fourth {
+    max-width: 1050px;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: start;
+    gap: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding: 0px 0px 0px 0px;
+  }
+
 }
